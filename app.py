@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import sqlite3
 import requests
 from datetime import datetime
+import pytz
 
 app = Flask(__name__)
 
@@ -55,7 +56,8 @@ def home():
         top_news = top_news[:6]
 
     # Current time
-    current_time = datetime.now().strftime("%A, %b %d, %Y | %I:%M %p")
+    india = pytz.timezone('Asia/Kolkata')
+    current_time = datetime.now(india).strftime("%A, %b %d, %Y | %I:%M %p")
 
     return render_template('index.html',
                            current_time=current_time,
