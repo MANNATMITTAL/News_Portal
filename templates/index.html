@@ -36,10 +36,10 @@
 
   <!-- Header with Logo, Live Time and Weather -->
   <header class="bg-dark text-white text-center p-2">
-    <img src="/static/images/skynews_logo.png" alt="Sky News Logo" style="max-height: 100px;">
+    <img src="/static/image/skynews_logo.png" alt="Sky News Logo" style="max-height: 100px;">
     <h1>Sky News Portal</h1>
     <p id="live-time">
-      {{ current_time }} | Delhi Weather: {{ weather }}
+      {{ current_time }}
       {% if weather_icon %}
         <img src="http://openweathermap.org/img/wn/{{ weather_icon }}.png" alt="Weather Icon">
       {% endif %}
@@ -56,7 +56,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="/static/images/skynews_logo.png" alt="Sky News Logo">
+        <img src="/static/image/skynews_logo.png" alt="Sky News Logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,11 +146,11 @@
     <div class="container">
       <!-- Logo centered -->
       <div class="text-center mb-3">
-        <img src="/static/images/skynews_logo.png" alt="Sky News Logo" style="max-height: 40px;">
+        <img src="/static/image/skynews_logo.png" alt="Sky News Logo" style="max-height: 40px;">
       </div>
 
       <!-- Newsletter form -->
-      <h3 class="text-center">Subscribe to our Newsletter</h3>
+      <h3 class="text-center">Subscribe to our News Portal</h3>
       <form method="post" class="row g-3 justify-content-center">
         <div class="col-md-4">
           <input type="text" name="name" placeholder="Your Name" class="form-control" required>
@@ -159,7 +159,7 @@
           <input type="email" name="email" placeholder="Your Email" class="form-control" required>
         </div>
         <div class="col-md-2">
-          <button type="submit" class="btn btn-light w-50">Subscribe</button>
+          <button type="submit" class="btn btn-light w-60">Subscribe</button>
         </div>
       </form>
 
